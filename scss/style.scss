@@ -16,6 +16,10 @@ body{
     background: $primarybutton;  
 }
 
+.noPadding{
+    padding: 0px;
+}
+
 button{
     box-shadow: none;
     border: none;
@@ -93,7 +97,7 @@ button{
     }
     
     .generalInfo{
-        margin:63px 0px 66px 0px;
+        margin:0px 0px 66px 0px;
         padding: 0px 20px;
         font-weight: 700;
         color: #000;
@@ -102,12 +106,15 @@ button{
         h3{
             font-size: 18px;
             font-weight: 700;
+            height: 15px;
+            padding: 55px;
         }
         
         p{
         font-weight: 300;
         color: #000;         
         margin: 40px 0px 0px 0px;
+            height: 53px;
         }
     }
     
@@ -126,6 +133,8 @@ button{
 #numbers{
     background: #fafafa;
     padding: 95px 0px 110px 0px;
+    
+  
     
     p{
         font-size: 18px;
@@ -264,7 +273,7 @@ button{
     //testimonials
 
 #testimonials{
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 180px 0px;
     
     .generalInfo{
         margin: 65px 0px 0px 0px;
@@ -377,7 +386,7 @@ button{
 
 //mediaQueries
 
-@media (max-width: 768px) { 
+@media (max-width: 991px) { 
     
     #home{
         background: #000;
@@ -393,9 +402,74 @@ button{
     #brands img{
         margin:20px;
     }
+    
+    #services{
+        .generalInfo{
+            h3{
+                padding: 0px;
+                height: 60px;
+            }
+            
+            p{
+                height: 113px;
+            }
+        }
+        
+        h2{
+            font-size: 58px;
+        }
+    }
 
 
 }
+
+@media (max-width: 771px) { 
+    
+ 
+ 
+    #services{
+        .generalInfo{
+                h3{
+                    padding: 0px;
+                    height: 60px;
+                }
+
+                p{
+                    height: auto;
+                }
+            }
+
+                h2{
+                    font-size: 80px;
+                    margin-top: 40px;
+                }
+
+                .special{
+                    margin: 37px 138px 0px -51px;
+                }
+            }
+    
+            #testimonials {
+                
+                .name{
+                    p{
+                        font-size: 26px;
+                    }
+                    span{
+                        font-size: 26px;
+                    }
+                }
+                
+                .textTestimonial{
+                font-size: 14px;
+                    line-height: 26px;
+            }
+                
+                
+            }
+
+}
+
 
 
    

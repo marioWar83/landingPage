@@ -82,9 +82,28 @@ $primarybutton:  #1f94f3;
                    border-color: #fff;
                 }
     
+                .carousel-indicators{
+                    bottom: -73px;
+                }
+
+                .carousel-indicators li{
+                    background-color: #f2f2f2;
+                    height: 16px;
+                    max-width: 16px;
+                    border-radius: 16px;
+                }
+
+                .carousel-indicators .active{
+                    background-color: #4e6b82;
+                }
+
     
     
 }
+
+// =============================================================================
+// Replace Default css range bar
+// =============================================================================
 
 @mixin rangeBar{
     

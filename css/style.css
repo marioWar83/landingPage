@@ -137,11 +137,26 @@ input[type=range]:focus::-ms-fill-upper {
   background: #112434;
   border-color: #fff; }
 
+.carousel-indicators {
+  bottom: -73px; }
+
+.carousel-indicators li {
+  background-color: #f2f2f2;
+  height: 16px;
+  max-width: 16px;
+  border-radius: 16px; }
+
+.carousel-indicators .active {
+  background-color: #4e6b82; }
+
 body {
   font-family: "Helvetica"; }
 
 .blue {
   background: #1f94f3; }
+
+.noPadding {
+  padding: 0px; }
 
 button {
   box-shadow: none;
@@ -194,18 +209,21 @@ h4 {
     font-size: 14px;
     color: #bebebe; }
   #services .generalInfo {
-    margin: 63px 0px 66px 0px;
+    margin: 0px 0px 66px 0px;
     padding: 0px 20px;
     font-weight: 700;
     color: #000;
     font-size: 18px; }
     #services .generalInfo h3 {
       font-size: 18px;
-      font-weight: 700; }
+      font-weight: 700;
+      height: 15px;
+      padding: 55px; }
     #services .generalInfo p {
       font-weight: 300;
       color: #000;
-      margin: 40px 0px 0px 0px; }
+      margin: 40px 0px 0px 0px;
+      height: 53px; }
   #services button {
     width: 122px;
     height: 34px;
@@ -298,7 +316,7 @@ h4 {
     font-size: 36px; }
 
 #testimonials {
-  padding: 100px 0px 100px 0px; }
+  padding: 100px 0px 180px 0px; }
   #testimonials .generalInfo {
     margin: 65px 0px 0px 0px; }
   #testimonials .name {
@@ -366,7 +384,7 @@ h4 {
     float: right;
     text-align: right; }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #home {
     background: #000; }
     #home img {
@@ -374,4 +392,30 @@ h4 {
     #home .table-cell h1 {
       line-height: 40px; }
   #brands img {
-    margin: 20px; } }
+    margin: 20px; }
+  #services .generalInfo h3 {
+    padding: 0px;
+    height: 60px; }
+  #services .generalInfo p {
+    height: 113px; }
+  #services h2 {
+    font-size: 58px; } }
+
+@media (max-width: 771px) {
+  #services .generalInfo h3 {
+    padding: 0px;
+    height: 60px; }
+  #services .generalInfo p {
+    height: auto; }
+  #services h2 {
+    font-size: 80px;
+    margin-top: 40px; }
+  #services .special {
+    margin: 37px 138px 0px -51px; }
+  #testimonials .name p {
+    font-size: 26px; }
+  #testimonials .name span {
+    font-size: 26px; }
+  #testimonials .textTestimonial {
+    font-size: 14px;
+    line-height: 26px; } }
