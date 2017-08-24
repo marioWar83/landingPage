@@ -7,4 +7,4 @@ npm install --save-dev gulp-install
 ![npm install](/images/npmInstall.jpg?raw=true "Npm Install")
 # Generating Assets
 Compile Assets with: gulp watch
-![npm install](/images/watchImg.jpg?raw=true "Npm Install")
+![npm install](/images/watchimg.jpg?raw=true "Npm Install")
