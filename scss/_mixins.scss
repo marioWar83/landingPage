@@ -45,36 +45,45 @@ $primarybutton:  #1f94f3;
 }
 
 @mixin bootstrapReplace{
-    //replace classes from bootstrap
+                    //replace classes from bootstrap
 
-.bg-faded{
-    background-color: transparent;
-}
+                .bg-faded{
+                    background-color: transparent;
+                }
 
-.navbar-light .navbar-nav .nav-link{
-    color: #fff;
-    width: 130px;
-    font-size: 14px;
-}
+                .navbar-light .navbar-nav .nav-link{
+                    color: #fff;
+                    width: 130px;
+                    font-size: 14px;
+                    text-align: center;
+                }
 
 
-.navbar-brand{
-    padding:0px;
-}
+                .navbar-brand{
+                    padding:0px;
+                }
 
-.btn-success{
-    background: $primarybutton;
-    border-color: $primarybutton;
-    margin:30px;
-    font-size: 14px;
-}
+                .btn-success{
+                    background: $primarybutton;
+                    border-color: $primarybutton;
+                    margin:30px;
+                    font-size: 14px;
+                }
 
-.btn-outline-success{
-    color: #fff;
-    border-color: #fff;
-    width: 140px;
-    font-size: 14px;
-}
+                .btn-outline-success{
+                    color: #fff;
+                    border-color: #fff;
+                    width: 140px;
+                    font-size: 14px;
+                }
+    
+               .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+                    background: #112434; 
+                   border-color: #fff;
+                }
+    
+    
+    
 }
 
 @mixin rangeBar{

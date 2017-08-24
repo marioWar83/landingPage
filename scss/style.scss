@@ -1,6 +1,7 @@
 @import 'mixins';
 @include font-face(Helvetica, fonts/Helvetica, 300, normal, woff);
-@include font-face(Robot, fonts/Roboto, 300, normal, woff);
+@include font-face(Roboto, fonts/Roboto, 300, normal, woff);
+@include font-face(RobotoLight, fonts/RobotoSlab-Light, 300, normal, ttf);
 @include rangeBar;
 @include bootstrapReplace;
 
@@ -75,12 +76,20 @@ button{
     h2{
         color: #2095f3;
         font-size:80px;
-        font-family: "Roboto";
+        font-family: "RobotoLight";
     }
+      .special{
+            float: right;
+          font-size: 36px;
+          margin: 37px 7px 0px -23px;
+          color: $primarybutton;
+        }
     
     p{
         font-size:14px;
         color:#bebebe;
+        
+      
     }
     
     .generalInfo{
@@ -89,6 +98,11 @@ button{
         font-weight: 700;
         color: #000;
         font-size: 18px;
+        
+        h3{
+            font-size: 18px;
+            font-weight: 700;
+        }
         
         p{
         font-weight: 300;
@@ -111,9 +125,7 @@ button{
 
 #numbers{
     background: #fafafa;
-    padding: 95px 0px 0px 0px;
-    height: 720px;
-
+    padding: 95px 0px 110px 0px;
     
     p{
         font-size: 18px;
@@ -159,12 +171,53 @@ button{
         
         list-style-type: none;
         line-height: 55px;
+        color: #BEBEBE;
+        font-weight: 500;
+        margin-left: -39px;
         .active{
-             list-style-type: circle;
+            list-style-type: circle;
             font-weight: 900;
+            color: #000;
             padding-left: 10px;
+            margin-left: 19px;
         }
     } 
+    
+    ul.planDescriptions{
+
+        list-style-type: none;
+        line-height: 64px;
+        color:#7F7F7F;
+        
+            li:before{
+                color: transparent;
+            }
+        
+          :before{
+                content: ".";
+            }
+        
+            li:after {
+                position: absolute;
+                left: -50px;
+                background: $primarybutton;
+                width: 60px;
+                height: 2px;
+                display: inline-block;
+            }
+        
+            .active{
+                line-height: 20px;
+            }
+
+            .active:after {
+                content: '';
+            }
+
+          
+
+       }
+    
     
     .planned, .investment{
         p{
@@ -192,15 +245,17 @@ button{
         h1{
             color: #2095f3;
             font-size: 80px;
-            font-family: "Roboto";
+            font-family: "RobotoLight";
         }
         .sign{
             float: left;
             width:30px;
+            margin: 31px 0px 0px 0px;
             display: table-cell;
             vertical-align: bottom;
             color: $primarybutton;
             font-family: "Roboto";
+            font-size: 36px;
         }
     }
     
@@ -210,16 +265,46 @@ button{
 
 #testimonials{
     padding: 100px 0px 100px 0px;
+    
+    .generalInfo{
+        margin: 65px 0px 0px 0px;
+    }
+    
+    .name{
+        width: 80%;
+        p{
+        font-size: 36px;
+        }
+        span{
+        font-size: 36px;
+        color: #bebebe;    
+        }
+    }
+    
+    .textTestimonial{
+        font-size: 20px;
+        line-height: 36px;
+        
+        p:before{
+            content:open-quote;
+        }
+        
+        p:after{
+            content:close-quote;
+        }
+        
+    }
 }
 
 #emailus{
-    padding: 100px 0px 120px 0px;
+    padding: 120px 0px 120px 0px;
     background: #1f94f3;
    
     
     h1{
         color: #fff;
         font-size: 40px;
+        width: 80%;
     }
     
     p{
@@ -233,6 +318,20 @@ button{
         height: 34px;
         background: transparent;
         border: 1px solid #fff;
+        padding: 5px;
+        color: #fff;
+    }
+    
+    .fillButton{
+        background: #fff;
+        color: $primarybutton;
+        
+    }
+    .btn-outline{
+        background:transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-left: 10px;
     }
 }
 
@@ -245,14 +344,34 @@ button{
     p{
         color: #fff;
     }
+    
+    .appStore img{
+        width: 133px;
+        margin-top: 60px;
+    }
+    
+    img{
+        margin-bottom:40px;
+    }
 
 }
 
     .footerDeep{
-        height: 40px;
-        background: rgba(0,0,0,0.25);
-        position: absolute;
-        bottom: 0;
+        margin-bottom: -40px;
+        height: 45px;
+        background: #112434;
+        padding-top: 12px;
+        
+        p{
+            color: #fff;
+            font-size: 12px;
+        }
+        
+        .pull-right{
+            float: right;
+            text-align: right;
+        }
+        
     }
 
 
@@ -262,6 +381,17 @@ button{
     
     #home{
         background: #000;
+        img{
+            display: none;
+        }
+        
+        .table-cell h1{
+            line-height: 40px;
+        }
+    }
+    
+    #brands img{
+        margin:20px;
     }
 
 

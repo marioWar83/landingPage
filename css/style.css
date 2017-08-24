@@ -5,10 +5,16 @@
   src: url("fonts/Helvetica.woff") format("woff"); }
 
 @font-face {
-  font-family: "Robot";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   src: url("fonts/Roboto.woff") format("woff"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/RobotoSlab-Light.ttf") format("truetype"); }
 
 input[type=range] {
   -webkit-appearance: none;
@@ -109,7 +115,8 @@ input[type=range]:focus::-ms-fill-upper {
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   width: 130px;
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center; }
 
 .navbar-brand {
   padding: 0px; }
@@ -125,6 +132,10 @@ input[type=range]:focus::-ms-fill-upper {
   border-color: #fff;
   width: 140px;
   font-size: 14px; }
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open > .dropdown-toggle.btn {
+  background: #112434;
+  border-color: #fff; }
 
 body {
   font-family: "Helvetica"; }
@@ -173,7 +184,12 @@ h4 {
   #services h2 {
     color: #2095f3;
     font-size: 80px;
-    font-family: "Roboto"; }
+    font-family: "RobotoLight"; }
+  #services .special {
+    float: right;
+    font-size: 36px;
+    margin: 37px 7px 0px -23px;
+    color: #1f94f3; }
   #services p {
     font-size: 14px;
     color: #bebebe; }
@@ -183,6 +199,9 @@ h4 {
     font-weight: 700;
     color: #000;
     font-size: 18px; }
+    #services .generalInfo h3 {
+      font-size: 18px;
+      font-weight: 700; }
     #services .generalInfo p {
       font-weight: 300;
       color: #000;
@@ -197,8 +216,7 @@ h4 {
 
 #numbers {
   background: #fafafa;
-  padding: 95px 0px 0px 0px;
-  height: 720px; }
+  padding: 95px 0px 110px 0px; }
   #numbers p {
     font-size: 18px;
     font-weight: 300; }
@@ -226,11 +244,35 @@ h4 {
       border-bottom: 2px solid #eaeaea; }
   #numbers ul.types {
     list-style-type: none;
-    line-height: 55px; }
+    line-height: 55px;
+    color: #BEBEBE;
+    font-weight: 500;
+    margin-left: -39px; }
     #numbers ul.types .active {
       list-style-type: circle;
       font-weight: 900;
-      padding-left: 10px; }
+      color: #000;
+      padding-left: 10px;
+      margin-left: 19px; }
+  #numbers ul.planDescriptions {
+    list-style-type: none;
+    line-height: 64px;
+    color: #7F7F7F; }
+    #numbers ul.planDescriptions li:before {
+      color: transparent; }
+    #numbers ul.planDescriptions :before {
+      content: "."; }
+    #numbers ul.planDescriptions li:after {
+      position: absolute;
+      left: -50px;
+      background: #1f94f3;
+      width: 60px;
+      height: 2px;
+      display: inline-block; }
+    #numbers ul.planDescriptions .active {
+      line-height: 20px; }
+    #numbers ul.planDescriptions .active:after {
+      content: ''; }
   #numbers .planned p, #numbers .investment p {
     font-size: 18px; }
   #numbers .planned span, #numbers .investment span {
@@ -244,24 +286,43 @@ h4 {
   #numbers .planned h1 {
     color: #2095f3;
     font-size: 80px;
-    font-family: "Roboto"; }
+    font-family: "RobotoLight"; }
   #numbers .planned .sign {
     float: left;
     width: 30px;
+    margin: 31px 0px 0px 0px;
     display: table-cell;
     vertical-align: bottom;
     color: #1f94f3;
-    font-family: "Roboto"; }
+    font-family: "Roboto";
+    font-size: 36px; }
 
 #testimonials {
   padding: 100px 0px 100px 0px; }
+  #testimonials .generalInfo {
+    margin: 65px 0px 0px 0px; }
+  #testimonials .name {
+    width: 80%; }
+    #testimonials .name p {
+      font-size: 36px; }
+    #testimonials .name span {
+      font-size: 36px;
+      color: #bebebe; }
+  #testimonials .textTestimonial {
+    font-size: 20px;
+    line-height: 36px; }
+    #testimonials .textTestimonial p:before {
+      content: open-quote; }
+    #testimonials .textTestimonial p:after {
+      content: close-quote; }
 
 #emailus {
-  padding: 100px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   background: #1f94f3; }
   #emailus h1 {
     color: #fff;
-    font-size: 40px; }
+    font-size: 40px;
+    width: 80%; }
   #emailus p {
     color: #fff;
     font-size: 18px; }
@@ -270,20 +331,47 @@ h4 {
     width: 100%;
     height: 34px;
     background: transparent;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff; }
+  #emailus .fillButton {
+    background: #fff;
+    color: #1f94f3; }
+  #emailus .btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 10px; }
 
 #footer {
   padding: 65px 0px 120px 0px;
   background: #173045; }
   #footer p {
     color: #fff; }
+  #footer .appStore img {
+    width: 133px;
+    margin-top: 60px; }
+  #footer img {
+    margin-bottom: 40px; }
 
 .footerDeep {
-  height: 40px;
-  background: rgba(0, 0, 0, 0.25);
-  position: absolute;
-  bottom: 0; }
+  margin-bottom: -40px;
+  height: 45px;
+  background: #112434;
+  padding-top: 12px; }
+  .footerDeep p {
+    color: #fff;
+    font-size: 12px; }
+  .footerDeep .pull-right {
+    float: right;
+    text-align: right; }
 
 @media (max-width: 768px) {
   #home {
-    background: #000; } }
+    background: #000; }
+    #home img {
+      display: none; }
+    #home .table-cell h1 {
+      line-height: 40px; }
+  #brands img {
+    margin: 20px; } }
