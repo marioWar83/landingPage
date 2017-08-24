@@ -1,0 +1,274 @@
+@import 'mixins';
+@include font-face(Helvetica, fonts/Helvetica, 300, normal, woff);
+@include font-face(Robot, fonts/Roboto, 300, normal, woff);
+@include rangeBar;
+@include bootstrapReplace;
+
+
+//globals
+
+body{
+    font-family: "Helvetica"
+}
+
+.blue{
+    background: $primarybutton;  
+}
+
+button{
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+    h4{
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+//sections
+
+    //home
+
+#home{
+    margin-top: -68px;
+    height: 720px;   
+    background: url('../images/bitmap.png');
+    background-size: cover;
+    background-position: center;
+
+    .table-cell{
+        height: 720px;  
+        display: table-cell;
+        vertical-align: middle;
+        
+         h1{
+            line-height: 70px;
+            font-size: 40px;
+             color:#fff;
+         }
+        
+         button{
+            margin: 51px 0px 0px 0px;
+            height:40px;
+            width:136px;
+            color: #fff;
+            font-size:12px;
+         }
+    }    
+}
+
+    //brands
+    
+#brands{
+    padding:25px 0px 25px 0px;
+    background: #fafafa;
+    text-align: center;
+}
+
+    //services
+
+#services{
+    padding:141px 0px;
+    text-align: center;
+    
+    h2{
+        color: #2095f3;
+        font-size:80px;
+        font-family: "Roboto";
+    }
+    
+    p{
+        font-size:14px;
+        color:#bebebe;
+    }
+    
+    .generalInfo{
+        margin:63px 0px 66px 0px;
+        padding: 0px 20px;
+        font-weight: 700;
+        color: #000;
+        font-size: 18px;
+        
+        p{
+        font-weight: 300;
+        color: #000;         
+        margin: 40px 0px 0px 0px;
+        }
+    }
+    
+    button{
+        width: 122px;
+        height: 34px;
+        border: 1px solid #bfbfbf;
+        background: #f2f2f2;
+        font-size: 12px;
+        color: #000;
+    }
+}
+
+    //numbers Section
+
+#numbers{
+    background: #fafafa;
+    padding: 95px 0px 0px 0px;
+    height: 720px;
+
+    
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        
+    }
+    
+    .configuration{
+        margin-top:40px;
+    }
+    
+    .indicator{
+        height:20px;
+        width: 80%;
+        
+        .circle{
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+            background: $primarybutton;
+            position: absolute;
+            left: 40%;
+            
+        }
+        
+        .barFull{
+            height: 10px;
+            float: left;
+            width: 50%;
+            border-bottom: 2px solid $primarybutton;
+        }
+        
+        .barEmpty{
+            height: 10px;
+            float: left;
+            width: 50%;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+    }
+    
+    ul.types{
+        
+        list-style-type: none;
+        line-height: 55px;
+        .active{
+             list-style-type: circle;
+            font-weight: 900;
+            padding-left: 10px;
+        }
+    } 
+    
+    .planned, .investment{
+        p{
+            font-size: 18px;
+        }
+        
+        span{
+            font-size: 36px;
+            
+        }
+    }
+    
+    .planned{
+        
+        .amount{
+            padding-top:50px;
+            
+            p{
+                font-size: 14px;
+                color: #bebebe;
+                padding-left: 30px;
+            }
+        }
+        
+        h1{
+            color: #2095f3;
+            font-size: 80px;
+            font-family: "Roboto";
+        }
+        .sign{
+            float: left;
+            width:30px;
+            display: table-cell;
+            vertical-align: bottom;
+            color: $primarybutton;
+            font-family: "Roboto";
+        }
+    }
+    
+}
+
+    //testimonials
+
+#testimonials{
+    padding: 100px 0px 100px 0px;
+}
+
+#emailus{
+    padding: 100px 0px 120px 0px;
+    background: #1f94f3;
+   
+    
+    h1{
+        color: #fff;
+        font-size: 40px;
+    }
+    
+    p{
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    input{
+        margin: 30px 0px;
+        width:100%;
+        height: 34px;
+        background: transparent;
+        border: 1px solid #fff;
+    }
+}
+
+    //footer
+
+#footer{
+       padding: 65px 0px 120px 0px;
+       background: #173045;
+    
+    p{
+        color: #fff;
+    }
+
+}
+
+    .footerDeep{
+        height: 40px;
+        background: rgba(0,0,0,0.25);
+        position: absolute;
+        bottom: 0;
+    }
+
+
+//mediaQueries
+
+@media (max-width: 768px) { 
+    
+    #home{
+        background: #000;
+    }
+
+
+}
+
+
+   
+
+
+

@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Helvetica.woff") format("woff"); }
+
+@font-face {
+  font-family: "Robot";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Roboto.woff") format("woff"); }
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */ }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; }
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: #fff;
+  border-color: transparent;
+  color: transparent; }
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16;
+  width: 16px;
+  border-radius: 16px;
+  background: #1f94f3;
+  margin-top: -6px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background: #1f94f3; }
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 16;
+  width: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  cursor: pointer; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 20%;
+  height: 5.4px;
+  background: #3071a9;
+  border-radius: 1.3px; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #fff;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #fff;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #fff; }
+
+input[type=range]::-ms-fill-upper {
+  background: #fff;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #fff; }
+
+.bg-faded {
+  background-color: transparent; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  width: 130px;
+  font-size: 14px; }
+
+.navbar-brand {
+  padding: 0px; }
+
+.btn-success {
+  background: #1f94f3;
+  border-color: #1f94f3;
+  margin: 30px;
+  font-size: 14px; }
+
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+  width: 140px;
+  font-size: 14px; }
+
+body {
+  font-family: "Helvetica"; }
+
+.blue {
+  background: #1f94f3; }
+
+button {
+  box-shadow: none;
+  border: none;
+  cursor: pointer; }
+
+h4 {
+  font-weight: 700;
+  font-size: 28px; }
+
+#home {
+  margin-top: -68px;
+  height: 720px;
+  background: url("../images/bitmap.png");
+  background-size: cover;
+  background-position: center; }
+  #home .table-cell {
+    height: 720px;
+    display: table-cell;
+    vertical-align: middle; }
+    #home .table-cell h1 {
+      line-height: 70px;
+      font-size: 40px;
+      color: #fff; }
+    #home .table-cell button {
+      margin: 51px 0px 0px 0px;
+      height: 40px;
+      width: 136px;
+      color: #fff;
+      font-size: 12px; }
+
+#brands {
+  padding: 25px 0px 25px 0px;
+  background: #fafafa;
+  text-align: center; }
+
+#services {
+  padding: 141px 0px;
+  text-align: center; }
+  #services h2 {
+    color: #2095f3;
+    font-size: 80px;
+    font-family: "Roboto"; }
+  #services p {
+    font-size: 14px;
+    color: #bebebe; }
+  #services .generalInfo {
+    margin: 63px 0px 66px 0px;
+    padding: 0px 20px;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px; }
+    #services .generalInfo p {
+      font-weight: 300;
+      color: #000;
+      margin: 40px 0px 0px 0px; }
+  #services button {
+    width: 122px;
+    height: 34px;
+    border: 1px solid #bfbfbf;
+    background: #f2f2f2;
+    font-size: 12px;
+    color: #000; }
+
+#numbers {
+  background: #fafafa;
+  padding: 95px 0px 0px 0px;
+  height: 720px; }
+  #numbers p {
+    font-size: 18px;
+    font-weight: 300; }
+  #numbers .configuration {
+    margin-top: 40px; }
+  #numbers .indicator {
+    height: 20px;
+    width: 80%; }
+    #numbers .indicator .circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background: #1f94f3;
+      position: absolute;
+      left: 40%; }
+    #numbers .indicator .barFull {
+      height: 10px;
+      float: left;
+      width: 50%;
+      border-bottom: 2px solid #1f94f3; }
+    #numbers .indicator .barEmpty {
+      height: 10px;
+      float: left;
+      width: 50%;
+      border-bottom: 2px solid #eaeaea; }
+  #numbers ul.types {
+    list-style-type: none;
+    line-height: 55px; }
+    #numbers ul.types .active {
+      list-style-type: circle;
+      font-weight: 900;
+      padding-left: 10px; }
+  #numbers .planned p, #numbers .investment p {
+    font-size: 18px; }
+  #numbers .planned span, #numbers .investment span {
+    font-size: 36px; }
+  #numbers .planned .amount {
+    padding-top: 50px; }
+    #numbers .planned .amount p {
+      font-size: 14px;
+      color: #bebebe;
+      padding-left: 30px; }
+  #numbers .planned h1 {
+    color: #2095f3;
+    font-size: 80px;
+    font-family: "Roboto"; }
+  #numbers .planned .sign {
+    float: left;
+    width: 30px;
+    display: table-cell;
+    vertical-align: bottom;
+    color: #1f94f3;
+    font-family: "Roboto"; }
+
+#testimonials {
+  padding: 100px 0px 100px 0px; }
+
+#emailus {
+  padding: 100px 0px 120px 0px;
+  background: #1f94f3; }
+  #emailus h1 {
+    color: #fff;
+    font-size: 40px; }
+  #emailus p {
+    color: #fff;
+    font-size: 18px; }
+  #emailus input {
+    margin: 30px 0px;
+    width: 100%;
+    height: 34px;
+    background: transparent;
+    border: 1px solid #fff; }
+
+#footer {
+  padding: 65px 0px 120px 0px;
+  background: #173045; }
+  #footer p {
+    color: #fff; }
+
+.footerDeep {
+  height: 40px;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0; }
+
+@media (max-width: 768px) {
+  #home {
+    background: #000; } }
